@@ -9,7 +9,7 @@ import voting_v6
 
 def login():
     #Importing datasets
-    usr = pd.read_csv("C:/Users/nakul/OneDrive/Desktop/EPICS/Beta_V01/users.csv")
+    usr = pd.read_csv("C:/Users/fahad/Documents/Coding/Personal Projects/VoteGuard/users.csv")
     #Taking user ID input
     login_id = input("\nEnter your login ID: ")
     login_id="u"+login_id

@@ -5,7 +5,7 @@ from capture_img import take_photos
 # Encode faces from a folder
 # take_photos()
 sfr = SimpleFacerec()
-sfr.load_encoding_images("C:/Users/nakul/OneDrive/Desktop/EPICS/Beta_V01/images")
+sfr.load_encoding_images("C:/Users/fahad/Documents/Coding/Personal Projects/VoteGuard/images")
 
 # Load Camera
 cap = cv2.VideoCapture(0)

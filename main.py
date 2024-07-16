@@ -5,8 +5,8 @@ import ac_creation as ac
 import login_func_v02 as lg
 
 #Datasets
-usr = pd.read_csv("C:/Users/nakul/OneDrive/Desktop/EPICS/Beta_V01/users.csv")
-aadr = pd.read_csv("C:/Users/nakul/OneDrive/Desktop/EPICS/Beta_V01/aadr.csv")
+usr = pd.read_csv("C:/Users/fahad/Documents/Coding/Personal Projects/VoteGuard/users.csv")
+aadr = pd.read_csv("C:/Users/fahad/Documents/Coding/Personal Projects/VoteGuard/aadr.csv")
 
 print("Welcome to the E-Voting System!\n")
 print("Do you have a pre-existing account?\n")

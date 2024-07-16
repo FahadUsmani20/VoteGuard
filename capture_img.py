@@ -5,7 +5,7 @@ def take_photos():
     count = 0
     size = 4
     fn_haar = 'haarcascade_frontalface_default.xml'
-    fn_dir = 'C:/Users/nakul/OneDrive/Desktop/source code/images'
+    fn_dir = 'C:/Users/fahad/Documents/Coding/Personal Projects/VoteGuard/images'
     fn_name = input("Enter the Person's Name: ")
     path = os.path.join(fn_dir, fn_name)
     if not os.path.isdir(path):

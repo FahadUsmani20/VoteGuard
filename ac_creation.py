@@ -6,21 +6,21 @@ import pandas as pd
 def create_account():
     # Create an empty dataframe with columns, 'username' and 'password'
     user_name = pd.DataFrame(columns=['user_id', 'password', 'voting status'])
+
     # Ask the user for their username and password
     aadr = input("Enter your Aadhar ID: ")
     aadr="u"+aadr
     password1 = pwinput.pwinput(prompt='Enter your password: ', mask='*')
     password = pwinput.pwinput(prompt='Enter your password: ', mask='*')
-    # password = input("Enter your password: ")
+
     # Append the username and password to the dataframe as a new row
-    # Append the username and password to the dataframe as a new row
-    new_row = pd.DataFrame({'user_id': aadr, 'password': password1, 'voting status': 0}, index=[0])
+    new_row = pd.DataFrame(data = {'user_id': aadr, 'password': password1, 'voting status': 0}, index=[0])
     user_name = pd.concat([new_row], ignore_index=False)
 
     #user_name = user_name.append({'aadr': aadr, 'password': password1, 'voting status': 0}, ignore_index=True)
     
     # Write the dataframe to a CSV file
-    user_name.to_csv('C:/Users/nakul/OneDrive/Desktop/EPICS/Beta_V01/users.csv', mode='a',header=False, index=False)
+    user_name.to_csv('C:/Users/fahad/Documents/Coding/Personal Projects/VoteGuard/users.csv', mode='a',header=False, index=False)
     # user_name.to_csv('C:/Users/nakul/OneDrive/Desktop/EPICS/Beta_V01/users.csv', mode='a', header=not os.path.exists('D:/EPICS/Beta_V01/users.csv'),header=False, index=False)
     
     #Biometric ka code
@@ -30,7 +30,7 @@ def create_account():
 
 def information(adrnum,password):
 
-    aadr_info = pd.read_csv("C:/Users/nakul/OneDrive/Desktop/EPICS/Beta_V01/aadr.csv")
+    aadr_info = pd.read_csv("C:/Users/fahad/Documents/Coding/Personal Projects/VoteGuard/aadr.csv")
     # Get the index of the row where 'aadhar' column matches the given 'adrnum'
     if adrnum in aadr_info['aadhar'].values:
 
